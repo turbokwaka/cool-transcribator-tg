@@ -1,0 +1,6 @@
+services:
+  transcribator-bot:
+    build: .
+    restart: always
+    volumes:
+      - .:/app   # щоб під час розробки бачити зміни без перезапуску збірки
